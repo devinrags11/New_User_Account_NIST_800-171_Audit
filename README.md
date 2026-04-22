@@ -6,14 +6,14 @@ cannot be bypassed by non-administrative users.
 * **Account Type:** Standard User (Non-Admin).
 * **Scope:** Identity and Access Management (IAM) Validation.
 ## Audit Steps
-1. **Provisioning:** Created a "Standard" user account via System Se"ings to simulate a typical employee
-pro!le.
-2. **Persistence Testing:** Logged in as the Standard user and a"empted to revert security se"ings (e.g.,
+1. **Provisioning:** Created a "Standard" user account via System Settings to simulate a typical employee
+proile.
+2. **Persistence Testing:** Logged in as the Standard user and attempted to revert security settings (e.g.,
 disabling Firewall or Screen Lock).
-3. **Veri!cation:** Ran the mSCP audit script to identify which controls are "User-Speci!c" versus
+3. **Verification:** Ran the mSCP audit script to identify which controls are "User-Specific" versus
 "System-Wide."
 ## Findings
-* **Vulnerability:** Identi!ed that certain UI-based se"ings revert to defaults for new pro!les unless
+* **Vulnerability:** Identified that certain UI-based settings revert to defaults for new proiles unless
 enforced via `/Library/Managed Preferences`.
-* **Remediation:** Con!rmed that `.mobilecon!g` pro!les are required for consistent enforcement across
+* **Remediation:** Confirmed that `.mobilecon!g` proiles are required for consistent enforcement across
 all user stubs.
