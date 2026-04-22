@@ -15,5 +15,5 @@ disabling Firewall or Screen Lock).
 ## Findings
 * **Vulnerability:** Identified that certain UI-based settings revert to defaults for new proiles unless
 enforced via `/Library/Managed Preferences`.
-* **Remediation:** Confirmed that `.mobilecon!g` proiles are required for consistent enforcement across
+* **Remediation:** Confirmed that `.mobileconfig` proiles are required for consistent enforcement across
 all user stubs.
